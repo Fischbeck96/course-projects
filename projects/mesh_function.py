@@ -8,7 +8,6 @@ def mesh_function(f: Callable[[float], float], t: float) -> np.ndarray:
         tuple[i] = f(t[i])
     return tuple
         
-    raise NotImplementedError
 
 
 def func(t: float) -> float:
@@ -18,7 +17,7 @@ def func(t: float) -> float:
         return np.exp(-3*t)
     else:
         raise ValueError
-    raise NotImplementedError
+    
 
 
 

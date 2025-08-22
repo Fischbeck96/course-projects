@@ -11,7 +11,7 @@ def differentiate(u: np.ndarray, dt: float) -> np.ndarray:
         else:
             disc[i]=(u[i]-u[i-1])/dt
     return disc
-    raise NotImplementedError
+
 tt= np.linspace(0,1,10)    
 print(differentiate(tt**2,0.1))
 
@@ -26,7 +26,6 @@ def differentiate_vector(u: np.ndarray, dt: float) -> np.ndarray:
         
     #d[1:N_t]=(u[2:N_t+1] -u[0:N_t-1])/(2*dt)
     return d
-    raise NotImplementedError
 print("hi",differentiate_vector(tt**2,0.1))
 def test_differentiate():
     t = np.linspace(0, 1, 10)
